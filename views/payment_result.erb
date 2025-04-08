@@ -1,0 +1,29 @@
+<h1>Payment Results</h1>
+<p>
+  <div>
+    APR
+  </div>
+  <div>
+    <%= @apr_input.to_fs(:percentage, {:precision => 4})%>
+  </div>
+  <div>
+    Number of years
+  </div>
+  <div>
+    <%= @year_input%>
+  </div>
+  <div>
+    Principal
+  </div>
+  <div>
+    <%= @principal_input.to_fs(:currency)%>
+  </div>
+  <div>
+    Payment
+  </div>
+  <div>
+    <%= @payment.to_fs(:currency)%>
+  </div>
+</p>
+
+<a href="/payment/new">Calculate another payment</a>
